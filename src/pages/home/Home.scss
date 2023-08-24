@@ -1,3 +1,4 @@
+@import "../../../mixins.scss";
 .carouselSection{
     position: relative;
     margin-bottom: 70px;
@@ -9,8 +10,11 @@
     }
 
     .carouselTitle{
-        font-size: 24px;
+        font-size: 18px;
         color: white;
         font-weight: normal;
+        @include md{
+            font-size: 24px;
+        }
     }
 }
